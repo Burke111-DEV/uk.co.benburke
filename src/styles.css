@@ -1,1 +1,68 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    overflow: overlay;
+}
+
+.letter-spacing-fix { letter-spacing: 1px !important }
+html, body, .mat-typography {
+    letter-spacing: 1px;
+}
+
+div.title {
+    letter-spacing: 1px !important;
+    font-size: 2rem !important;
+    font-weight: bold !important;
+    color: #000000b0 !important;
+    line-height: 2rem !important;
+    padding-top: 0 !important;
+}
+div.emoji-title {
+    margin-top: 0.75rem !important;
+    letter-spacing: 1px !important;
+    font-size: 1.5rem !important;
+    font-weight: bold !important;
+    line-height: 1.5rem !important;
+}
+
+.link-text {
+    width:fit-content;
+    margin-top: 0.3rem;
+    font-weight: 500;
+    text-decoration: underline;
+    color: black;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.link-text:hover  {color: rgb(103, 103, 103); }
+.link-text:active {color: rgb(158, 158, 158); }
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #d5d5d5d7;
+    transition: 0.3s !important;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #b8b8b8da;
+}
+
+
+@keyframes fade-in {
+    from  {opacity: 0;}
+    to    {opacity: 1;}
+  }

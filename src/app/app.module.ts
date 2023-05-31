@@ -1,16 +1,30 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MaterialModule } from './material/material.module';
+import { TopBarComponent } from './top-bar/top-bar.component';
+import { ProjectsListComponent } from './projects-list/projects-list.component';
+import { FooterComponent } from './footer/footer.component';
+import { CvComponent } from './cv/cv.component';
+import { CardComponent } from './card/card.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    routingComponents,
+    TopBarComponent,
+    ProjectsListComponent,
+    FooterComponent,
+    CvComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

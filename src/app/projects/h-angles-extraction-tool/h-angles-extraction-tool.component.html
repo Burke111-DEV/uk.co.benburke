@@ -1,0 +1,40 @@
+<div class="p-hangles-container" [class.mobile]="session.isMobile">
+    <div class="title">HAND ANGLES EXTRACTION TOOL</div>
+    <div class="emoji-title">📷✌️📐</div>
+
+    <div class="sect">
+        The Hand Angles Extraction Tool is a project designed to estimate the angle of rotation for each joint in a user's hand when presented to the camera of a device. 
+        Developed using JavaScript and the MediaPipe library, this package employs Machine Learning and trigonometry to calculate approximations for each joint in the hand in real-time by looking at a camera feed. 
+    </div>
+
+    <div class="sect images">
+        <div class="img-box box-a">
+            <img src="assets/projects/h-angles-extraction-tool/HAET_SCRCPY.png" />
+            <div class="img-caption">Demo GUI webpage</div>
+        </div>
+        
+        <div class="img-box box-b">
+            <img src="assets/projects/h-angles-extraction-tool/CAMERA_SHOT.png" />
+            <div class="img-caption">Camera frame</div>
+        </div>
+        
+    </div>
+
+    <div class="sect">
+        This system leverages the MediaPipe Hands machine learning library to process a camera feed and obtain approximate 3D point data for an image of a hand. 
+        By performing mathematical computations on the obtained 3D coordinates, the system calculates the joint angles throughout the virtual representation of the hand in real-time. 
+        Although not highly accurate, this project offers a quick and easy-to-use package for extracting hand pose data from a camera feed.
+    </div>
+
+    <div class="sect menu-grid">
+        <a class="code-btn" href="https://github.com/Burke111-DEV/hand_angle_extraction_tool" target="_blank">
+            <mat-icon>code</mat-icon>
+            <div class="menu-txt">Check out the code</div>
+        </a>
+
+        <a class="code-btn" href="https://examples.benburke.co.uk/hand_angles_extraction_tool/" target="_blank">
+            <mat-icon >videogame_asset</mat-icon>
+            <div class="menu-txt">Try out the demo</div>
+        </a>
+    </div>
+</div>

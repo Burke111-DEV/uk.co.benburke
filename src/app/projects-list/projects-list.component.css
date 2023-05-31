@@ -1,0 +1,27 @@
+/* Desktop (Default) */
+.projects-list-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  transition: 0.4s;
+}
+
+.project-box {
+    width: 168px;
+    height: calc(1.618 * 168px);
+    overflow: hidden;
+    
+    transition: 0.4s;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Mobile */
+.mobile .project-box {
+  width: 40vw;
+  height: calc(1.618 * 40vw);
+  margin: 0.5vh !important;
+}

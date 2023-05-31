@@ -1,0 +1,24 @@
+/* Desktop (default) */
+.under-construction-container {
+    width: calc(100% - 2*4rem);
+    min-height: calc(100vh - (6rem + 5rem));
+    padding: 3rem 4rem 4rem 4rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    opacity: 0;
+    animation: fade-in 250ms linear 150ms 1 forwards;
+}
+
+.sect { 
+    width: 40vw;
+    margin-top: 3rem;
+}
+
+.sorry-sect { text-align: center; }
+
+/* Mobile */
+.mobile .sect { width: 85vw; }
+.mobile .projects-sect { margin-top: 2rem; }

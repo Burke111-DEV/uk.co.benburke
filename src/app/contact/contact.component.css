@@ -1,0 +1,65 @@
+/* Desktop (default) */
+.contact-container {
+    width: calc(100% - 2*4rem);
+    min-height: calc(100vh - (6rem + 5rem));
+    padding: 3rem 4rem 4rem 4rem;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    opacity: 0;
+    animation: fade-in 250ms linear 150ms 1 forwards;
+}
+
+.contacts-grid {
+    width: 100%;
+    margin-top: 20vh;
+    padding: 0 10%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.contacts-box {
+    width: 30%;
+    padding: 1.5rem;
+    border-bottom: #00000033 2px solid;
+    margin: 0 2%;
+    
+    cursor: pointer;
+    transition: 0.2s;
+}
+.contacts-box:hover {
+    background-color: #00000005;
+    border-radius: 6px;
+}
+.contacts-box:active {
+    background-color: #00000000;
+}
+.contacts-box .title-row {
+    pointer-events: none;
+}
+.contacts-box .text-row.title-row {
+    font-weight: 600;
+}
+
+/* Mobile */
+.mobile .contacts-grid {
+    margin-top: 3rem;
+    padding: 0;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.mobile .contacts-box {
+    width: 100%;
+    margin: 1.5rem 0;
+}

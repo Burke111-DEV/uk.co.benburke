@@ -1,0 +1,33 @@
+/* Desktop (Default) */
+.footer-container {
+    width: calc(100% - 2 * 10rem);
+    height: calc(100% - 2 * 1.5rem);
+    overflow: hidden;
+    background-color: rgb(34, 44, 59);
+    padding: 1.5rem 10rem;
+    color: white;
+}
+
+.left-text { 
+    position: absolute; 
+    left: 10rem;
+    text-align: left;
+}
+.right-text { 
+    position: absolute; 
+    right: 10rem;
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+}
+a:hover { opacity: 0.8; }
+a:active { opacity: 1; }
+
+/* Mobile */
+.mobile .footer-text { font-size: 0.75em; }
+.mobile .left-text  { left: 4vw; }
+.mobile .right-text { right: 4vw; }

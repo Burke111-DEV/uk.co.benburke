@@ -1,0 +1,10 @@
+<div #listContainer class="projects-list-container" [class.mobile]="session.isMobile">
+    <app-card 
+        *ngFor="let project of projects; index as i" 
+        [project]="project"
+        class="project-box" 
+        [style.margin]="marginVal" 
+        [routerLink]="project.link"
+        >
+    </app-card>
+</div>

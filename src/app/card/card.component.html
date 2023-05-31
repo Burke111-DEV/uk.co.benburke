@@ -1,0 +1,13 @@
+<div class="card-container">
+    <div class="bg-div" [style.background-image]="'url(' + projectData.background + ')'">
+
+    </div>
+    <div class="card-title">{{projectData.title | uppercase}}</div>
+
+    <div class="tech-pills-box">
+        <div *ngFor="let tech of projectData.technologies;" class="tech-pill" [class]="tech">
+            {{tech | uppercase}}
+        </div>
+    </div>
+    
+</div>

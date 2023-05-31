@@ -1,0 +1,101 @@
+.card-container {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    
+    position: relative;
+    cursor: pointer;
+}
+
+.bg-div {
+    height: 100%;
+    width: 100%;
+
+    background-size:     100%;
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    filter: blur(1.5px);
+
+    transition: 0.2s;
+    pointer-events: none;
+}
+.card-container:hover .bg-div {
+    background-size: 110%;
+    filter: blur(0);
+}
+.card-container:active .bg-div {
+    background-size: 105%;
+}
+
+
+
+.card-container:hover .card-title {
+    bottom: 16px;
+    background-color: #ffffffef;
+    color: rgba(0, 0, 0, 0.75);
+    letter-spacing: 2.125px;
+}
+.card-container:active .card-title {
+    bottom: 18px;
+}
+
+.card-title {
+    min-width: 6em;
+    min-height: 2em;
+    max-width: 65%;
+    padding: 4px 8px;
+    
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.56);
+    background-color: #ffffffd0;
+    border-radius: 8px;
+
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+
+    transition: 0.2s;
+}
+
+.card-container:hover .tech-pills-box {opacity: 0.8}
+.tech-pills-box {
+    height: 95%;
+    width: 50%;
+    position: absolute;
+    left: 4px;
+    top: 2.5%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    opacity: 0.5;
+    transition: 0.3s;
+
+    pointer-events: none;
+}
+.tech-pill {
+    height: 12px;
+    font-size: 10px;
+    padding: 3px 6px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    font-weight: 500;
+
+    border-radius: 12px;
+    margin: 2px;
+    color: white;
+    pointer-events: none;
+}
+.tech-pill.cpp { background-color: rgb(30, 45, 215); }
+.tech-pill.html { background-color: rgb(211, 76, 35); }
+.tech-pill.css { background-color: rgb(41, 100, 216); }
+.tech-pill.js { background-color: rgb(251, 238, 52); color: black; }
+.tech-pill.angular { background-color: rgb(224, 38, 25);}
+.tech-pill.java { background-color: rgb(255, 255, 255); color: rgb(228, 66, 16); }
+.tech-pill.python { background-color: rgb(255, 243, 71); color: rgb(33, 96, 212); }
+.tech-pill.sql { background-color: rgb(210, 94, 40);}
+.tech-pill.cad { background-color: rgb(208, 223, 245); color: rgb(9, 22, 41); }

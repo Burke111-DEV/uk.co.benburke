@@ -1,0 +1,13 @@
+<div class="top-bar-container" [class.mobile]="session.isMobile">
+    <div class="header-main" routerLink="">
+        <div class="row-1">Ben<span class="row-1-append">jamin</span></div>
+        <div class="row-2">Martin</div>
+        <div class="row-3">Burke</div>
+    </div>
+
+    <div class="header-links">
+        <div class="header-link-text" routerLink="about" routerLinkActive="link-active">   <span *ngIf="isActive('/about')" class="fade-in link-inidicator" > 👉</span>     About Me</div>
+        <div class="header-link-text" routerLink="cv" routerLinkActive="link-active">      <span *ngIf="isActive('/cv')" class="fade-in link-inidicator" > 👉</span>        CV</div>
+        <div class="header-link-text" routerLink="contact" routerLinkActive="link-active"> <span *ngIf="isActive('/contact')" class="fade-in link-inidicator" > 👉</span>   Contact</div>
+    </div>
+</div>
