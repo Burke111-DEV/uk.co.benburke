@@ -8,6 +8,11 @@
     color: white;
 }
 
+.footer-text.footer-text-sub {
+    opacity: 0.8; 
+    font-size: 0.75em;
+}
+
 .left-text { 
     position: absolute; 
     left: 10rem;
@@ -28,6 +33,7 @@ a:hover { opacity: 0.8; }
 a:active { opacity: 1; }
 
 /* Mobile */
-.mobile .footer-text { font-size: 0.75em; }
+.mobile .footer-text { font-size: 0.5em; line-height: 2.5em; }
+.mobile .footer-text.footer-text-sub { font-size: 0.4em; }
 .mobile .left-text  { left: 4vw; }
 .mobile .right-text { right: 4vw; }

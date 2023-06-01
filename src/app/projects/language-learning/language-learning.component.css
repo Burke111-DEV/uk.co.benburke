@@ -16,6 +16,7 @@
     width: 40vw;
     margin-top: 3rem;
 }
+.sect.sect-b { margin-top: 1rem; }
 
 .sect-title {
     font-size: 1.5rem;
@@ -37,6 +38,7 @@
 .img-box .img-caption {
     padding-top: 4px;
     text-align: center;
+    min-height: 3rem;
 }
 
 .menu-grid {
@@ -80,9 +82,11 @@ a.code-btn { text-decoration: none; color: black; }
 .mobile .sect { width: 85vw; }
 .mobile .projects-sect { margin-top: 2rem; }
 
-.mobile .img-box.box-a img { width: calc( (85vw - 1rem) * (1600 / (1600 + 596)) ) ;}
-.mobile .img-box.box-b img { width: calc( (85vw - 1rem) * (596 / (1600 + 596)) ) ;}
+.mobile .img-box.box-a img { width: 100%; }
 
 .mobile .menu-grid .code-btn {
+    width: 50%;
+    margin: 0.5rem;
+    font-size: 0.7em;
     padding-bottom: 2rem;
 }

@@ -26,6 +26,8 @@ div.emoji-title {
     font-size: 1.5rem !important;
     font-weight: bold !important;
     line-height: 1.5rem !important;
+    width: 100%;
+    text-align: center;
 }
 
 .link-text {

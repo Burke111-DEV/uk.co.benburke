@@ -1,7 +1,7 @@
 <div class="footer-container" [class.mobile]="session.isMobile">
     <div class="left-text">
         <div class="footer-text"><span style="font-weight: 500;">Ben Martin Burke</span> | Portfolio Website | 2023</div>
-        <div class="footer-text" style="opacity: 0.8; font-size: 0.75em;">Designed and Built by Ben Martin Burke | Built using Angular</div>
+        <div class="footer-text footer-text-sub">Designed and Built by Ben Martin Burke<span *ngIf="!session.isMobile"> | Built using Angular</span></div>
     </div>
 
     <div class="right-text" style="opacity: 0.8;">

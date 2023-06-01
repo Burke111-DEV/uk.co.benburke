@@ -1,0 +1,4 @@
+ToDo:
+- Title width for mobile    +
+- Footer for mobile
+- Project imgs for mobile   +
