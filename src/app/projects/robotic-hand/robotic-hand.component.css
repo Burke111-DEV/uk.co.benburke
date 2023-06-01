@@ -1,0 +1,130 @@
+/* Desktop (default) */
+.p-robotic-hand-container {
+    width: calc(100% - 2*4rem);
+    min-height: calc(100vh - (6rem + 5rem));
+    padding: 3rem 4rem 4rem 4rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    opacity: 0;
+    animation: fade-in 250ms linear 150ms 1 forwards;
+}
+
+.sect { 
+    width: 40vw;
+    margin: 0.25rem 0;
+}
+.sect-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.sect-video {
+    width: 100%;
+    text-align: center;
+}
+.sect.sect-a,
+.sect.sect-j, 
+.sect.sect-q { margin: 3rem 0 0 0; }
+.sect.sect-q iframe { margin: 0; max-width: 100%;  }
+
+.images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+.img-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.5rem;
+}
+.img-box.box-a img { width: 100%; }
+.img-box img { border-radius: 12px; }
+.img-box .img-caption {
+    padding-top: 4px;
+    text-align: center;
+    min-height: 2rem;
+}
+
+.images-d .box-a img ,
+.images-d .box-b img ,
+.images-f .box-a img ,
+.images-f .box-b img  {
+    height: calc( 0.275 * 40vw );
+}
+.images-g .box-a img ,
+.images-g .box-b img {
+    height: calc( 0.24 * 40vw );
+}
+
+
+
+.menu-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-top: 4rem;
+}
+.menu-grid .code-btn {
+    height: 2rem;
+    width: 30%;
+    margin: 0 1.5rem;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: row;
+
+    border-bottom: #00000033 2px solid;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.menu-grid .code-btn:hover {
+    background-color: #00000005;
+    border-radius: 6px;
+}
+.menu-grid .code-btn:active { background-color: #00000000; }
+a.code-btn { text-decoration: none; color: black; }
+
+.code-btn mat-icon {
+    height: 2rem;
+    width: 2rem;
+    margin-right: 0.5rem;
+}
+.code-btn .menu-txt {
+    line-height: 1.5rem;
+}
+
+
+/* Mobile */
+.mobile .sect { width: 85vw; }
+.mobile .projects-sect { margin-top: 2rem; }
+
+.mobile .images {
+    flex-direction: column;
+}
+
+.mobile .images-d .box-a img ,
+.mobile .images-d .box-b img,
+.mobile .images-f .box-a img ,
+.mobile .images-f .box-b img ,
+.mobile .images-g .box-a img ,
+.mobile .images-g .box-b img {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 14rem;
+}
+
+.mobile .img-box .img-caption { min-height: 3rem; }
+
+.mobile .menu-grid .code-btn {
+    width: 50%;
+    margin: 0.5rem;
+    font-size: 0.9em;
+    padding-bottom: 2rem;
+}

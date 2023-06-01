@@ -1,0 +1,244 @@
+<div class="p-robotic-hand-container" [class.mobile]="session.isMobile">
+    <div class="title">ROBOTIC PROSTHETIC HAND</div>
+    <div class="emoji-title">🦾🤖💡</div>
+
+    <!-- Intro -->
+    <div class="sect sect-a">
+        <div class="sect-title">Robotic Hand Design 🦾</div>
+        This project investigates the use of CAD and high-resolution 3D printing to produce a novel robotic prosthetic hand design, as well as electronic circuit design for its control. 
+        Complementary to the hardware aspects, this project explores multi-threaded microcontroller programming using RTOS and C++.
+    </div>
+
+    <!-- A -->
+
+    <div class="sect images images-b">
+        <div class="img-box box-a">
+            <img src="assets/projects/robotic-hand/A.png" />
+            <div class="img-caption">3D renders of robotic hand design</div>
+        </div>
+    </div>
+
+    <div class="sect sect-b">
+        This project produces a 3D design for a robotic prosthetic hand with integrated actuators and demonstrates the assembly of a single finger of that design. 
+        A functional circuit-board was created based around the ESP32 microcontroller for the purposes of driving each actuator and reading angle sensors in the robotic prosthetic hand.
+        Executed on the ESP32 microcontroller is a tailor-made C++ program making effective use of its multithreading capability, integrating a feedback-based control system for stable control of the robotic prosthetic hand’s joints.
+    </div>
+
+    <!-- B -->
+
+    <div class="sect images images-c">
+        <div class="img-box box-a">
+            <img src="assets/projects/robotic-hand/B.png" />
+            <div class="img-caption">3D overview of integrated motors and MCP joint motions</div>
+        </div>
+    </div>
+
+    <div class="sect sect-c">
+        The primary objectives of this design were to design and develop an assembly which integrated all motors within the footprint of a biological hand, while retaining all degrees of freedom. 
+        Each finger and the thumb contain four degrees of freedom each, totalling 20 in a whole hand assembly (not including the wrist).
+    </div>
+
+    <!-- C -->
+
+    <div class="sect images images-d">
+        <div class="img-box box-a">
+            <img src="assets/projects/robotic-hand/C.png" />
+            <div class="img-caption">Phalanges design revisions</div>
+        </div>
+        <div class="img-box box-b">
+            <img src="assets/projects/robotic-hand/D.png" />
+            <div class="img-caption">Metacarpal design revisions</div>
+        </div>
+    </div>
+
+    <div class="sect sect-d">
+        With 3D CAD, various design iterations were produced. 
+        For the phalange sections, at least 15 distinct designs were trialled, while the metacarpal section saw at least 9. 
+        Each iteration building on lessons learned from the previous, gradually making improvements.
+    </div>
+
+    <!-- D -->
+
+    <div class="sect images images-e">
+        <div class="img-box box-a">
+            <img src="assets/projects/robotic-hand/E.png" />
+            <div class="img-caption">3D printed parts</div>
+        </div>
+    </div>
+
+    <div class="sect sect-e">
+        Each design revision was 3D printed using a SLA resin 3D printer, achieving impressively high resolution for very small printed parts. 
+        After printing and breaking the parts free, they were cleaned up and hand assembled. 
+        This allowed me test the assembly and find faults and improvements for the next design round.
+    </div>
+
+     <!-- E -->
+
+     <div class="sect images images-f">
+        <div class="img-box box-a">
+            <img src="assets/projects/robotic-hand/F.png" />
+            <div class="img-caption">Finger design overview</div>
+        </div>
+        <div class="img-box box-b">
+            <img src="assets/projects/robotic-hand/G.png" />
+            <div class="img-caption">Thumb design overview</div>
+        </div>
+    </div>
+
+    <div class="sect sect-f">
+        Ultimately, this resulted in the final design revision. 
+        A full finger assembly containing integrated motors, angle-sensors, and four degrees of freedom. 
+        A variation of the finger design was made to produce the thumb by redesigning the metacarpal.
+    </div>
+
+    <!-- F -->
+
+     <div class="sect images images-g">
+        <div class="img-box box-a">
+            <img src="assets/projects/robotic-hand/H.png" />
+            <div class="img-caption">Metacarpal exploded view</div>
+        </div>
+        <div class="img-box box-b">
+            <img src="assets/projects/robotic-hand/I.png" />
+            <div class="img-caption">Phalanges exploded view</div>
+        </div>
+    </div>
+
+    <div class="sect sect-g">
+        The metacarpal and phalange units are complex multi-part assemblies which require meticulous and precise assembly. 
+        Though, it is a modular assembly, so if a digit becomes damaged, the module may be replaced without replacing the entire hand assembly. 
+        In theory, additional phalanges may be added beyond what a normal hand has.
+    </div>
+
+    <!-- G -->
+
+    <div class="sect images images-h">
+        <div class="img-box box-a">
+            <img src="assets/projects/robotic-hand/J.png" />
+            <div class="img-caption">Full hand assembly compared with human hand reference</div>
+        </div>
+    </div>
+
+    <div class="sect sect-h">
+        One full hand incorporates four of the same finger design, plus one thumb. 
+        The fingers are configured such that the middle finger’s tip reaches the highest to mimic a biological hand, the index and ring fingers slightly below, and the pinkie finger even lower. 
+        While the finger’s digits do not vary in size across the fingers, this configuration helps the hand morphology more closely resemble a biological hand. 
+    </div>
+    
+    <!-- h -->
+
+    <div class="sect images images-I">
+        <div class="img-box box-a">
+            <img src="assets/projects/robotic-hand/K.png" />
+            <div class="img-caption">3D printed and assembled single finger</div>
+        </div>
+    </div>
+
+    <div class="sect sect-I">
+        The final design was 3D printed and hand-assembled. 
+        Motors and angle sensors were wired together using flexible silicon-coated wires, passed through designed-in cavities specifically for carrying the wires through the finger. 
+        Due to the fragility of the 3D printed parts, only one finger was successfully printed, built, and tested. 
+        This was an issue with the printing material used, as a more suitable, higher-strength material would have been more appropriate.
+    </div>
+
+
+    <!-- Intro I -->
+    <div class="sect sect-j">
+        <div class="sect-title">Electronics Control Circuitry 🔌</div>
+        To bi-directionally control the integrated DC motors of the robotic hand, and obtain and relay the angle sensor information back to the ESP32 microcontroller board, a custom electronic circuit was designed. 
+        This was particularly vital  since a standard ESP32 microcontroller board does not have enough analog inputs to connect to all 20 angle sensors in a full-hand assembly, nor enough PWM outputs to control all 20 motors.
+    </div>
+
+    <!-- J -->
+
+    <div class="sect images images-k">
+        <div class="img-box box-a">
+            <img src="assets/projects/robotic-hand/L.png" />
+            <div class="img-caption">Circuit concept block diagram</div>
+        </div>
+    </div>
+
+    <div class="sect sect-k">
+        The design of a custom electronic circuit enables an ESP32-based microcontroller board to control the actuators of the prosthetic device. 
+        It houses expansion board peripherals to extend the number of analogue-input and PWM-output channels the microcontroller board may coordinate. 
+        The extended analogue-input channels directly sample the angle sensing devices from the prosthetic device. 
+        The extended PWM-output channels interface with discrete motor-driver chips, directing the direction and speed of the motor.
+    </div>
+
+    <!-- K -->
+
+    <div class="sect images images-l">
+        <div class="img-box box-a">
+            <img src="assets/projects/robotic-hand/M.png" />
+            <div class="img-caption">Circuit schematic</div>
+        </div>
+    </div>
+
+    <div class="sect sect-l">
+        The initial step was to design the circuit schematic. 
+        It employs the PCA9685 digital PWM output expansion board to extend the ESP32 microcontroller board’s PWM output channels, and the 74HC3047 IO multiplexer to extend the microcontroller board’s ADC input channels. 
+        For the bi-directional control of the integrated DC motors, the SN754410NE integrated chip was used, as each chip contains four half-H drivers, allowing for bi-directional control of two motors per chip. 
+        Finally, two LM317 voltage regulators are used in a variable voltage regulator configuration receiving 12v, to produce a 9v power rail for powering the SN754410NE chips, and a 5v power rail for powering the peripheral boards and angle sensors.
+    </div>
+
+    <!-- L -->
+
+    <div class="sect images images-m">
+        <div class="img-box box-a">
+            <img src="assets/projects/robotic-hand/N.png" />
+            <div class="img-caption">Assembled circuit on perf-board</div>
+        </div>
+    </div>
+
+    <div class="sect sect-m">
+        Finally, the circuit was assembled on a perf-board for fast prototyping, accounting for time spent in other aspects of the wider project.
+    </div>
+
+
+    <!-- Intro M -->
+    <div class="sect sect-n">
+        <div class="sect-title">Microcontroller Control Program 💻</div>
+    </div>
+    
+    <!-- N -->
+
+    <div class="sect images images-o">
+        <div class="img-box box-a">
+            <img src="assets/projects/robotic-hand/O.png" />
+            <div class="img-caption">Control program concept block diagram</div>
+        </div>
+    </div>
+
+    <div class="sect sect-o">
+        For the control of the robotic prosthetic hand, a custom C++ program was written.
+        <br>This program continuously acquires each actuator’s sensor data. Acquired data for each actuator is stored in its own ring buffer which operate on a first-in-first-out system.
+        <br>With every new acquisition, the median of that ring buffer is calculated and stored, achieving a running-median to reduce the effect of noise in the signal.
+        <br>With the calculation of a new median, the program will conduct a PID calculation using the median and the current PID setpoint. 
+        <br>The set-points are numerical values which represent the desired angle at which a joint should be driven to. 
+        <br>PID set-points are updated via incoming messages from the program’s connection to an MQTT broker via the ESP32’s Wi-Fi connection. 
+        <br>A user may send a command which sets the PID set-points to drive the robotic prosthetic joints. The program is divided into threads to enable the parallelisation of tasks, made possible by the FreeRTOS firmware on the ESP32. This further makes use of the fast 240 MHz clock frequency of the ESP32 microcontroller.
+    </div>
+
+    <!-- O -->
+
+    <div class="sect images images-p">
+        <div class="img-box box-a">
+            <img src="assets/projects/robotic-hand/P.png" />
+            <div class="img-caption">Control program operational flow chart</div>
+        </div>
+    </div>
+
+    <div class="sect sect-p">
+        The written program is described in the above flow chart. Each primary task is given its own dedicated thread to loop within.
+        <br>This was achieved using the FreeRTOS support with C++ in the Arduino IDE.
+    </div>
+
+
+    <!-- Intro -->
+    <div class="sect sect-q">
+        <div class="sect-title">Functional Assembly Demo 🔥</div>
+        <div class="sect-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/P1442G5OClk?start=6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>

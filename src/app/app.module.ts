@@ -7,8 +7,8 @@ import { MaterialModule } from './material/material.module';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProjectsListComponent } from './projects-list/projects-list.component';
 import { FooterComponent } from './footer/footer.component';
-import { CvComponent } from './cv/cv.component';
 import { CardComponent } from './card/card.component';
+
 
 
 @NgModule({
@@ -18,7 +18,6 @@ import { CardComponent } from './card/card.component';
     TopBarComponent,
     ProjectsListComponent,
     FooterComponent,
-    CvComponent,
     CardComponent,
   ],
   imports: [
