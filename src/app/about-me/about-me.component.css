@@ -15,10 +15,10 @@
 .sect { 
     width: 40vw;
     margin-top: 3rem;
+    margin-bottom: 1rem;
 }
 
 .sorry-sect { text-align: center; }
 
 /* Mobile */
 .mobile .sect { width: 85vw; }
-.mobile .projects-sect { margin-top: 2rem; }
