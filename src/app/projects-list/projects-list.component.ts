@@ -15,7 +15,7 @@ export class ProjectsListComponent implements OnInit, AfterViewInit {
     {
       title: "Robotic Prosthetic Hand University Dissertation",
       background: "/assets/cards_bg/diss.png",
-      technologies: ["python", "cpp", "html", "css", "js", "angular", "cad"],
+      technologies: ["python", "cpp", "cad"],
       link: "/robotic_prosthetic_hand",
     },
     {
