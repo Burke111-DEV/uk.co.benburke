@@ -1,0 +1,48 @@
+<div class="p-dispex-container" [class.mobile]="session.isMobile">
+    <div class="title">DISPLAY EXTEND</div>
+    <div class="emoji-title">🖥️🔌📱</div>
+
+    <div class="sect sect-a">
+        Display Extend is a software solution that extends the screen real-estate of Windows computers by using an Android mobile device as an additional monitor. 
+        By establishing a USB connection between the Android device and the Windows PC, Display Extend creates a virtual display that streams content to the mobile device, providing users with an extended screen space.
+    </div>
+
+    <div class="sect images">
+        <div class="img-box box-a">
+            <img src="assets/projects/display-extend/DISPEX.png" />
+            <div class="img-caption">Display Extend running on Android Tablet</div>
+        </div>
+    </div>
+
+    <div class="sect  sect-b">
+        Display Extend comprises two components: a Python server designed to run on a Windows PC and a client application developed for Android mobile devices. 
+        When the Android device is connected to the Windows computer via USB, the server and client automatically detect each other and establish a connection to enable the creation of the virtual display.
+    </div>
+
+    <div class="sect  sect-c">
+        <div class="sect-title">Virtual Display 🖥️</div>
+        Display Extend's server component generates a fully virtual display that is transmitted over the USB connection to the client device. 
+        This virtual display is entirely software-based and eliminates the need for additional hardware, such as a dummy plug. 
+        The virtual display seamlessly integrates with the Android device, providing users with an extended screen for improved multitasking and productivity.
+    </div>
+
+    <div class="sect  sect-d">
+        <div class="sect-title">Automatic Size and Adjustment 📏</div>
+        During the startup process, the server and client communicate to determine the optimal screen size for the connected mobile device. 
+        This intelligent sizing negotiation ensures that the virtual display perfectly suits the Android device. 
+        Furthermore, Display Extend dynamically adjusts the stream whenever the display's position is modified by the user within the "Display Settings" Windows menu.
+    </div>
+
+    <div class="sect  sect-e">
+        <div class="sect-title">h.264 Video Encoding 🎥</div>
+        To facilitate real-time streaming, Display Extend captures the video stream from the Windows PC and encodes it as an H264 (AVC) data stream using ffmpeg. 
+        The encoded stream is then transmitted over a websockets connection, accessible to the client device using Android Debug Bridge (ADB) and reverse port forwarding.
+    </div>
+
+    <div class="sect menu-grid">
+        <a class="code-btn" href="https://github.com/Burke111-DEV/display-extend-server" target="_blank">
+            <mat-icon>code</mat-icon>
+            <div class="menu-txt">Check out the code</div>
+        </a>
+    </div>
+</div>

@@ -37,6 +37,12 @@ export class ProjectsListComponent implements OnInit, AfterViewInit {
       link: "/alpha_project",
     },
     {
+      title: "Display Extend | USB Mobile Extra Display",
+      background: "/assets/cards_bg/dispext.png",
+      technologies: ["python", "java", "android", "js", "html", "css"],
+      link: "/display_extend",
+    },
+    {
       title: "Custom Dash Mounts",
       background: "/assets/cards_bg/CDM.png",
       technologies: ["cad"],

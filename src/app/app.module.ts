@@ -8,6 +8,7 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProjectsListComponent } from './projects-list/projects-list.component';
 import { FooterComponent } from './footer/footer.component';
 import { CardComponent } from './card/card.component';
+import { DisplayExtendComponent } from './projects/display-extend/display-extend.component';
 
 
 
@@ -19,6 +20,7 @@ import { CardComponent } from './card/card.component';
     ProjectsListComponent,
     FooterComponent,
     CardComponent,
+    DisplayExtendComponent,
   ],
   imports: [
     BrowserModule,

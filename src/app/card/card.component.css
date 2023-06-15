@@ -96,6 +96,7 @@
 .tech-pill.js { background-color: rgb(251, 238, 52); color: black; }
 .tech-pill.angular { background-color: rgb(224, 38, 25);}
 .tech-pill.java { background-color: rgb(255, 255, 255); color: rgb(228, 66, 16); }
+.tech-pill.android { background-color: rgb(255, 255, 255); color: rgb(52, 198, 69); }
 .tech-pill.python { background-color: rgb(255, 243, 71); color: rgb(33, 96, 212); }
 .tech-pill.sql { background-color: rgb(210, 94, 40);}
 .tech-pill.cad { background-color: rgb(208, 223, 245); color: rgb(9, 22, 41); }
