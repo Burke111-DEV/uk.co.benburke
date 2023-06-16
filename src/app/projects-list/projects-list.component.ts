@@ -32,9 +32,9 @@ export class ProjectsListComponent implements OnInit, AfterViewInit {
     },
     {
       title: "Alpha | VPet Interfacing Apps",
-      background: "/assets/cards_bg/default.png",
+      background: "/assets/cards_bg/vpets.png",
       technologies: ["html", "css", "js", "angular", "sql", "java"],
-      link: "/alpha_project",
+      link: "/vpet_apps",
     },
     {
       title: "Display Extend | USB Mobile Extra Display",

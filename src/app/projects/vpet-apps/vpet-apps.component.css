@@ -1,5 +1,5 @@
 /* Desktop (default) */
-.p-dispex-container {
+.p-alpha-container {
     width: calc(100% - 2*4rem);
     min-height: calc(100vh - (6rem + 5rem));
     padding: 3rem 4rem 4rem 4rem;
@@ -12,11 +12,29 @@
     animation: fade-in 250ms linear 150ms 1 forwards;
 }
 
+.title-link {
+    margin-top: 1.2rem;
+    width: 100%;
+    text-align: center;
+}
+.title-link a {
+    text-decoration: underline;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+.title-link a:hover { opacity: 0.8; }
+.title-link a:active { opacity: 0.5; }
+
 .sect { 
     width: 40vw;
     margin-top: 3rem;
 }
-.sect.sect-b { margin-top: 1rem; }
+.sect.sect-b,
+.sect.sect-d,
+.sect.sect-f { margin-top: 0; }
 
 .sect-title {
     font-size: 1.5rem;
@@ -40,6 +58,15 @@
     text-align: center;
     min-height: 3rem;
 }
+
+.sect.images.imgs-a { margin-top: 1rem; }
+
+.sect.images.imgs-b, .sect.images.imgs-c { margin-top: 1rem; }
+.imgs-b .box-a {
+    align-items: center;
+    width: 100%;
+}
+.imgs-b .img-box.box-a img { max-width: 30%; }
 
 .menu-grid {
     display: flex;
@@ -90,3 +117,5 @@ a.code-btn { text-decoration: none; color: black; }
     font-size: 0.9em;
     padding-bottom: 2rem;
 }
+
+.mobile .imgs-b .img-box.box-a img { max-width: 45%; }

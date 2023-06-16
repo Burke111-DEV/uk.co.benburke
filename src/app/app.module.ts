@@ -9,6 +9,7 @@ import { ProjectsListComponent } from './projects-list/projects-list.component';
 import { FooterComponent } from './footer/footer.component';
 import { CardComponent } from './card/card.component';
 import { DisplayExtendComponent } from './projects/display-extend/display-extend.component';
+import { VpetAppsComponent } from './projects/vpet-apps/vpet-apps.component';
 
 
 
@@ -21,6 +22,7 @@ import { DisplayExtendComponent } from './projects/display-extend/display-extend
     FooterComponent,
     CardComponent,
     DisplayExtendComponent,
+    VpetAppsComponent,
   ],
   imports: [
     BrowserModule,
