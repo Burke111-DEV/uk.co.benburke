@@ -8,8 +8,6 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProjectsListComponent } from './projects-list/projects-list.component';
 import { FooterComponent } from './footer/footer.component';
 import { CardComponent } from './card/card.component';
-import { DisplayExtendComponent } from './projects/display-extend/display-extend.component';
-import { VpetAppsComponent } from './projects/vpet-apps/vpet-apps.component';
 
 
 
@@ -21,8 +19,6 @@ import { VpetAppsComponent } from './projects/vpet-apps/vpet-apps.component';
     ProjectsListComponent,
     FooterComponent,
     CardComponent,
-    DisplayExtendComponent,
-    VpetAppsComponent,
   ],
   imports: [
     BrowserModule,

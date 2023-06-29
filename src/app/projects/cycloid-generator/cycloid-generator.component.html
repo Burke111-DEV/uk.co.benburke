@@ -1,0 +1,40 @@
+<div class="p-cycgen-container" [class.mobile]="session.isMobile">
+    <div class="title">CYCLOID GENERATOR</div>
+    <div class="emoji-title">✎⚙️📐</div>
+
+    <div class="sect sect-a">
+        Cycloid Generator is a Python script for Fusion 360 which generates Cycloid shapes as sketches that can be used to create 3D cycloidal discs and gears.
+    </div>
+
+    <div class="sect images">
+        <div class="img-box box-a">
+            <img src="assets/projects/cycloid-generator/cycloid_gen.png" />
+            <div class="img-caption">Cycloid Generator Sketch and GUI Menu</div>
+        </div>
+    </div>
+
+    <div class="sect sect-b">
+        In the GUI menu, users may configure the cycloid shape for their use. 
+        The shape type, number of pins, size of the pin, size of the cycloid, and the smoothness (contraction) may all be configured through this menu.
+        <br><br>Additionally, this script will interpolate the curve, sampling at a resolution set by the user through the Complexity field.
+        This creates a signficant performance improvement, as it reduces the amount of data in the generated sketch geometry while retaining a functionally accurate shape.
+    </div>
+
+    <div class="sect images">
+        <div class="img-box box-a">
+            <img src="assets/projects/cycloid-generator/cycloid_gears.png" />
+            <div class="img-caption">Cycloid Disc and Pins (Top-Left), Eccentrically Cycloid Gear (Bottom-Left), Eccentrically Cycloid Gear Inverted (Right)</div>
+        </div>
+    </div>
+
+    <div class="sect sect-c">
+        Some example use cases for a generated cycloid sketch are to produce 3D models of cycloid discs for use in cycloidal drives, or eccentrically cycloidal gears.
+    </div>
+
+    <div class="sect menu-grid">
+        <a class="code-btn" href="https://github.com/Burke111-DEV/CycloidGenerator" target="_blank">
+            <mat-icon>code</mat-icon>
+            <div class="menu-txt">Check out the code</div>
+        </a>
+    </div>
+</div>

@@ -43,6 +43,12 @@ export class ProjectsListComponent implements OnInit, AfterViewInit {
       link: "/display_extend",
     },
     {
+      title: "Cycloid Generator | Fusion360 Script",
+      background: "/assets/cards_bg/CYG.png",
+      technologies: ["python", "cad"],
+      link: "/cycloid_generator",
+    },
+    {
       title: "Custom Dash Mounts",
       background: "/assets/cards_bg/CDM.png",
       technologies: ["cad"],

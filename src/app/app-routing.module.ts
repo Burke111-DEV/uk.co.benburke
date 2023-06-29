@@ -10,6 +10,7 @@ import { LanguageLearningComponent } from './projects/language-learning/language
 import { RoboticHandComponent } from './projects/robotic-hand/robotic-hand.component';
 import { DisplayExtendComponent } from './projects/display-extend/display-extend.component';
 import { VpetAppsComponent } from './projects/vpet-apps/vpet-apps.component';
+import { CycloidGeneratorComponent } from './projects/cycloid-generator/cycloid-generator.component';
 
 
 const routes: Routes = [
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: 'robotic_prosthetic_hand', component: RoboticHandComponent },
   { path: 'display_extend', component: DisplayExtendComponent },
   { path: 'vpet_apps', component: VpetAppsComponent },
+  { path: 'cycloid_generator', component: CycloidGeneratorComponent },
 
   { path: '**', component: UnderConstructionComponent },
 ];
@@ -43,4 +45,6 @@ export const routingComponents =
   LanguageLearningComponent,
   RoboticHandComponent,
   DisplayExtendComponent,
+  VpetAppsComponent,
+  CycloidGeneratorComponent,
 ];
